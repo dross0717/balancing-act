@@ -1,0 +1,60 @@
+nav {
+  background-color: white;
+  width: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: 0px auto;
+}
+
+ul {
+  list-style: none;
+
+}
+
+body{
+  background-color: #f5f5f5;
+  margin: 0px;
+}
+
+h1 {
+  padding-left: 4em;
+}
+img.nav {
+  width: 100%;
+  padding-top: 20px;
+}
+
+img.logo {
+  width: 90px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+div.welcome {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  width: 200px;
+  height: 20px;
+
+}
+img.close {
+  width: 20px;
+}
+
+div.column1of2 {
+  margin-left: 150px;
+}
+.checking  {
+  width: 50px;
+}
+.savings {
+  width:50px;
+}
+.amazoncc {
+  width:50px
+}
+.southwestcc {
+  width: 50px;
+}
