@@ -1,31 +1,66 @@
 <!doctype html>
   <head>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Biryani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Biryani&display=swap">
+    <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
-  <div class="column1of2"
-    <h1> Balancing Act </h1>
+  <div class="column1of2">
       <nav>
         <img src="assets/elephant.svg" class="logo">
         <ul>
-          <li> <img src="assets/dashboard.svg" class="nav">
-          <li> <img src="assets/transaction.svg" class="nav">
-          <li> <img src="assets/profile.svg" class="nav">
+            <li> <img src="assets/dashboard.svg">
+            <li> <img src="assets/transaction.svg">
+            <li> <img src="assets/profile.svg">
         </ul>
       </nav>
-      <div class="welcome">
-        <p> Welcome, Oscar! <img src="assets/close.svg" class="close"> </p> </div>
-      <div class="income">
-        <p> Income </p>
-        <p> $2,119.12 </p></div>
-      <div class="expenses">
-        <p> Credit Score </p>
-        <p> 673 </p></div>
-    <h2> Accounts </h2>
-      <div class="manage">
-        <p class="manage">Manage Accounts</p> </div>
-      <div class="checking">
+      <h1> Balancing Act </h1>
+      <div class="welcome" id="jsbox">
+        <p class="welcome"> Welcome, Oscar! <img src="assets/close.svg" onclick="removeElem();" class="close"> </p> </div>
+      <section class="facts income">
+        <p>INCOME</p>
+        <p id="amount">$2,119.12</p></section>
+      <section class="facts expenses">
+        <p>EXPENSES</p>
+        <p id="amount">$420.54</p></section>
+      <section class="facts creditscore">
+        <p>CREDIT SCORE</p>
+        <p id="amount">673</p></section>
+  <!-- <div class="accounts"> -->
+    <p><h2 class="accounts"> Accounts </h2>
+      <div class="button1">
+        <button type="button" class="button"> Manage Accounts </button> </div>
+
+  <table class="accounts account1">
+    <tr>
+      <td><img src="assets/checking.svg" class="checking"> </td>
+      <td>Wells Fargo</td>
+      <td>Checking</td>
+    </tr>
+  </table>
+  <table class="accounts account2">
+    <tr>
+      <td><img src="assets/savings.svg" class="savings"></td>
+      <td>Wells Fargo</td>
+      <td>Savings</td>
+    </tr>
+  </table>
+  <table class="accounts account3">
+    <tr>
+      <td><img src="assets/credit-card.svg" class="amazoncc"> </td>
+      <td>Amazon Credit Card</td>
+      <td>Credit Card</td>
+    </tr>
+  </table>
+  <table class="accounts account4">
+    <tr>
+      <td><img src="assets/credit-card.svg" class="southwestcc"></td>
+      <td>Southwest Credit</td>
+      <td>Credit Card</td>
+    </tr>
+  </table>
+
+      <!-- <div class="checking">
         <p class="checking">
           <img src="assets/checking.svg" class="checking"> Wells Fargo</p>
           <p class="checking1"> Checking </p></div>
@@ -40,40 +75,75 @@
       <div class="southwest">
         <p class="southwest">
           <img src="assets/credit-card.svg" class="southwestcc">Southwest Credit</p>
-          <p class="southwestcc">Credit Card</p></div>
+          <p class="southwestcc">Credit Card</p></div> -->
     </div>
+
   <div class="column2of2">
-    <table>
-      <th>Recent Transactions </th>
-        <div class="newtrans">New Transaction</div>
-      <tr>
-        <td>Date</td>
-        <td>Payee</td>
-        <td>Inflow</td>
-        <td>Outflow</td>
+    <div class="transtable">
+      <table class="transactions">
+        <p><h2 class="recenttrans">Recent Transactions</h2>
+          <div class="button2">
+            <button type="button" class="button">New Transaction</button> </div>
+      <tr class="trans">
+        <td id="date">Date</td>
+        <td id="payee">Payee</td>
+        <td id="inflow">Inflow</td>
+        <td id="outflow">Outflow</td>
       </tr>
-      <tr>
-        <td>Oct 25, 2019</td>
-        <td>Target</td>
-        <td>-</td>
-        <td>$82.35</td>
+      <tr class="trans">
+        <td id="date">Oct 25, 2019</td>
+        <td id="payee">Target</td>
+        <td id="inflow">-</td>
+        <td id="outflow">$82.35</td>
       </tr>
-      <tr>
-        <td>Oct 24,2019</td>
-        <td>Express</td>
-        <td>-</td>
-        <td>$212.24</td>
-      <tr>
-        <td>Oct 22, 2019</td>
-        <td>Paycheck</td>
-        <td>$1,319.12</td>
-        <td>-</td>
+      <tr class="trans">
+        <td id="date">Oct 24,2019</td>
+        <td id="payee">Express</td>
+        <td id="inflow">-</td>
+        <td id="outflow">$212.24</td>
+      <tr class="trans">
+        <td id="date">Oct 22, 2019</td>
+        <td id="payee">Paycheck</td>
+        <td id="inflow">$1,319.12</td>
+        <td id="outflow">-</td>
       </tr>
-      <tr>
-        <td>Oct 21, 2019</td>
-        <td>Trader Joe's</td>
-        <td>-</td>
-        
-      </table>
+      <tr class="trans">
+        <td id="date">Oct 21, 2019</td>
+        <td id="payee">Trader Joe's</td>
+        <td id="inflow">-</td>
+        <td id="outflow">$54.92</td>
+      </tr>
+      <tr class="trans">
+        <td id="date">Oct 20, 2019</td>
+        <td id="payee">Shell</td>
+        <td id="inflow">-</td>
+        <td id="outflow">$46.23</td>
+      </tr>
+      <tr class="trans">
+        <td id="date">Oct 19, 2019</td>
+        <td id="payee">Rent</td>
+        <td id="inflow">$800.00</td>
+        <td id="outflow">-</td>
+      </tr>
+      <tr class="trans">
+        <td id="date">Oct 19, 2019</td>
+        <td id="payee">Hapa Sushi</td>
+        <td id="inflow">-</td>
+        <td id="outflow">$13.97</td>
+      </tr>
+      <tr class="trans">
+        <td id="date">Oct 18, 2019</td>
+        <td id="payee">Pig Train</td>
+        <td id="inflow"-</td>
+        <td id="outflow">$4.83</td>
+      </tr>
+      <tr class="trans">
+        <td id="date">Oct 18, 2019</td>
+        <td id="payee">RTD</td>
+        <td id="inflow">-</td>
+        <td id="outflow">$6.00</td>
+      </tr>
+    </table>
+  </div>
 </body>
 </html>
