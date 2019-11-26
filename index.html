@@ -5,16 +5,16 @@
     <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
-  <div class="column1of2">
+  <section class="container">
       <nav>
         <img src="assets/elephant.svg" class="logo">
         <ul>
-            <li> <img src="assets/dashboard.svg">
-            <li> <img src="assets/transaction.svg">
-            <li> <img src="assets/profile.svg">
+            <li> <img src="assets/dashboard.svg" id="dash">
+            <li> <img src="assets/transaction.svg" id="wallet">
+            <li> <img src="assets/profile.svg" id="profile">
         </ul>
       </nav>
-      <h1> Balancing Act </h1>
+    <h1> Balancing Act </h1>
       <div class="welcome" id="jsbox">
         <p class="welcome"> Welcome, Oscar! <img src="assets/close.svg" onclick="removeElem();" class="close"> </p> </div>
       <section class="facts income">
@@ -29,61 +29,33 @@
   <!-- <div class="accounts"> -->
     <p><h2 class="accounts"> Accounts </h2>
       <div class="button1">
-        <button type="button" class="button"> Manage Accounts </button> </div>
-
-  <table class="accounts account1">
-    <tr>
-      <td><img src="assets/checking.svg" class="checking"> </td>
-      <td>Wells Fargo</td>
-      <td>Checking</td>
-    </tr>
-  </table>
-  <table class="accounts account2">
-    <tr>
-      <td><img src="assets/savings.svg" class="savings"></td>
-      <td>Wells Fargo</td>
-      <td>Savings</td>
-    </tr>
-  </table>
-  <table class="accounts account3">
-    <tr>
-      <td><img src="assets/credit-card.svg" class="amazoncc"> </td>
-      <td>Amazon Credit Card</td>
-      <td>Credit Card</td>
-    </tr>
-  </table>
-  <table class="accounts account4">
-    <tr>
-      <td><img src="assets/credit-card.svg" class="southwestcc"></td>
-      <td>Southwest Credit</td>
-      <td>Credit Card</td>
-    </tr>
-  </table>
-
-      <!-- <div class="checking">
-        <p class="checking">
-          <img src="assets/checking.svg" class="checking"> Wells Fargo</p>
-          <p class="checking1"> Checking </p></div>
+        <button type="button" class="button"> MANAGE ACCOUNTS </button> </div>
+      <div class="checking">
+        <img src="assets/checking.svg" class="checking">
+          <div class="checking1">Wells Fargo</div>
+          <div class="checking2">Checking</div>
+      </div>
       <div class="savings" >
-        <p class="savings">
-          <img src="assets/savings.svg" class="savings"> Wells Fargo</p>
-          <p class="savings1"> Savings </p></div>
+          <img src="assets/savings.svg" class="savings">
+          <div class="savings1">Wells Fargo</div>
+          <div class="savings2">Savings</div>
+      </div>
       <div class="amazon">
-        <p class="amazon">
-          <img src="assets/credit-card.svg" class="amazoncc">Amazon Credit</p>
-          <p class="amazoncc">Credit Card</p></div>
+          <img src="assets/credit-card.svg" class="amazoncc">
+          <div class="amazon1">Amazon Credit</div>
+          <div class="amazoncc">Credit Card</div>
+      </div>
       <div class="southwest">
-        <p class="southwest">
-          <img src="assets/credit-card.svg" class="southwestcc">Southwest Credit</p>
-          <p class="southwestcc">Credit Card</p></div> -->
-    </div>
-
+          <img src="assets/credit-card.svg" class="southwestcc">
+          <div class="southwest1">Southwest Credit</div>
+          <div class="southwestcc">Credit Card</div>
+      </div>
   <div class="column2of2">
     <div class="transtable">
       <table class="transactions">
         <p><h2 class="recenttrans">Recent Transactions</h2>
           <div class="button2">
-            <button type="button" class="button">New Transaction</button> </div>
+            <button type="button" class="button">NEW TRANSACTION</button> </div>
       <tr class="trans">
         <td id="date">Date</td>
         <td id="payee">Payee</td>
@@ -145,5 +117,7 @@
       </tr>
     </table>
   </div>
+</div>
+</section>
 </body>
 </html>

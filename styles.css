@@ -2,8 +2,9 @@
   color:  #363636;
   font-family: 'Biryani', sans-serif;
 }
+
 nav {
-    background-color: white;
+  background-color: white;
   width: 100px;
   position: fixed;
   top: 0;
@@ -19,20 +20,35 @@ div.navicons {
 
 nav img {
   width: 75%;
-  margin-left: -10px;
+  margin-left: -40px;
   margin-top: 10px;
+}
+
+#dash {
+  border-left: solid 5px #1CA3BA;
+  padding-left:19px;
+}
+
+#wallet,
+#profile {
+  padding-left:23px;
 }
 
 ul {
   list-style: none;
   margin-top: 175px;
+}
+
+section.container {
+  width:100%;
+  margin-left: 150px;
 
 }
-.column1of2 {
-  float: left;
-  margin-left: 150px;
-  /* margin-right: 100px; */
-
+.column2of2 {
+  float: right;
+  width: 50%;
+  margin-top:-700px;
+  margin-right: 50px;
 }
 
 body{
@@ -50,6 +66,7 @@ img.logo {
   margin-left: 10px;
   margin-top: 10px;
 }
+
 div.welcome {
   border-radius: 5px;
   border-style: hidden;
@@ -58,21 +75,21 @@ div.welcome {
   background-image: linear-gradient(to right, #8ED1DC , #E3F4F6);
   margin-bottom: 10px;
   padding-top: 15px;
-  padding-left: 10px;
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.05);
 }
+
 p.welcome {
   font-size: 16pt;
   position: relative;
   margin-left:10px;
-
+  margin-top: 10px;
 }
 
 img.close {
-  width: 15px;
+  width: 13px;
   position: absolute;
-  top: 0;
-  right: 0;
+  margin-left: 380px;
+  margin-top: -5px;
 }
 
 section.facts {
@@ -80,16 +97,12 @@ section.facts {
   border-style: hidden;
   display: inline-block;
   margin-right: 15px;
-  width: 180px;
+  margin-top: 12px;
+  width: 177px;
   height: 80px;
   padding-left: 10px;
   box-shadow:0px 2px 2px 0px rgba(0,0,0,0.05);
 }
-
-/* button.manage,
-div.accounts {
-  display: inline-block;
-} */
 
 section #amount {
 font-size: 13pt;
@@ -110,69 +123,109 @@ div.button1 {
 button.button {
   background-color:#1CA3BA;
   border-style: hidden;
-  border-radius: 10px;
-  height:22px;
-  width: 140px;
+  border-radius: 15px;
+  height:30px;
+  width: 200px;
   color:white;
-  margin-left: 100px;
-  font-size: 10pt;
-
+  font-size: 9.5pt;
+  margin-right:10px;
+  padding-top: 5px;
 }
 
 div.button1 {
-  float:right;
+  /* float:right; */
   margin-top: 20px;
+  margin-left: 285px;
 }
 
 button.button:hover {
   background-color:#1CA3BA;
-  border-style: hidden;
-  border-radius: 10px;
+  border-style: solid;
+  border-color: white;
   font-weight: bold;
-
 }
 
-.checking  {
-  width: 50px;
-}
-.savings {
-  width:50px;
-}
-.amazoncc {
-  width:50px
-}
-.southwestcc {
-  width: 50px;
-}
-
-
-table.accounts {
-  background-color:white;
-  border-style: hidden;
+div.checking,
+div.savings,
+div.amazon,
+div.southwest {
   width: 600px;
-  height: 70px;
-  margin-top: 10px;
+  height:75px;
+  background-color: white;
+  margin-top: 20px;
   box-shadow:0px 2px 2px 0px rgba(0,0,0,0.05);
 
 }
+
+div.checking {
+  margin-top: -15px;
+}
+
 img.savings,
 img.checking,
 img.amazoncc,
 img.southwestcc {
-  padding-left: 5px;
+  padding-left: 15px;
+  width: 50px;
+  padding-top: 10px;
+  position: relative;
 }
-.column2of2 {
-  float:left;
-  margin-left: 50px;
+
+div.checking1,
+div.checking2,
+img.checking {
+  display: inline-block;
 
 }
+
+div.savings1,
+div.savings2,
+img.savings {
+  display: inline-block;
+}
+
+div.amazon1,
+div.amazoncc,
+img.amazoncc {
+  display: inline-block;
+}
+
+div.southwest1,
+div.southwestcc,
+img.southwestcc {
+  display: inline-block;
+
+}
+
+div.checking1,
+div.savings1,
+div.amazon1,
+div.southwest1 {
+  margin-left: 130px;
+  position: absolute;
+  margin-top: 25px;
+}
+
+div.checking2,
+div.savings2,
+div.amazoncc,
+div.southwestcc {
+  margin-left: 400px;
+  position: absolute;
+  margin-top: 25px;
+}
+
+div.southwest {
+  margin-bottom: 20px;
+}
+
 table.transactions {
   box-shadow; 0px 2px 2px 0px rgba(0,0,0,0.05);
   border-collapse: collapse;
   margin-left: 20px;
   margin-right: 20px
-
 }
+
 h2.recenttrans,
 div.button2 {
   display: inline-block;
@@ -180,33 +233,36 @@ div.button2 {
 
 h2.recenttrans {
   margin-left: 20px;
+  margin-bottom: 15px;
+  padding-top: 20px;
 }
+
 div.button2 {
   padding-right:5px;
+  margin-left: 50px;
 }
-/* div.newtrans {
-  background-color:#1CA3BA;
-  border-style: hidden;
-  border-radius: 10px;
-  height: 10px;
-  width: 150px;
-} */
+
+
 div.transtable {
   background-color:white;
   width:540px;
   height:430px;
   margin-top: 80px;
 }
+
 #date {
   width:125px;
   padding-left: 15px;
 }
+
 #payee {
   width:160px;
 }
+
 #inflow {
   width:120px;
 }
+
 #outflow {
   width: 120px;
 }
