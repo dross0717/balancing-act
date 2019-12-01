@@ -14,6 +14,7 @@
         </ul>
       </nav>
   <div id="container1">
+    <section class="leftcolumn">
     <h1> Balancing Act </h1>
       <div class="welcome" id="jsbox">
         <p class="welcome"> Welcome, Oscar! <img src="assets/close.svg" onclick="removeElem();" class="close"> </p> </div>
@@ -49,8 +50,9 @@
           <div class="southwest1">Southwest Credit</div>
           <div class="southwestcc">Credit Card</div>
       </div>
+    </section>
   <div class="column2of2">
-    <div class="transtable">
+    <div id="transtable" class="transtable">
       <table class="transactions">
         <p><h2 class="recenttrans">Recent Transactions</h2>
           <div class="button2">
@@ -238,24 +240,28 @@
 
     </div>
 
-    <div class="column9">
+    <div class="column2">
       <section class="newtransform">
         <h2 id="newTransHeader">New Transaction</h2>
+        <section class="formBody">
         <p class="formText">Type of Transaction:</p>
-        <p><select name="transactionType">
-          <option value="expense">Expense</option>
-        <p class="formText">Category</p>
-          <option value="selectOne">- Select One -</option>
-        <p class="formText">Account from:</p>
-          <option value="selectOne">= Select One -</option>
-        <p class="formText">Payee:</p>
-          <textarea name="payee" rows="1" columns="1"></textarea>
-        <p class="formText">Outflow:</p>
-          <textarea name="outflow" rows="1" columns="1"></textarea>
+          <p><select name="transactionType">
+          <option value="expense">Expense</option></select></p>
         <p class="formText">Category:</p>
-          <textarea name="category" rows="1" columns="1"></textarea>
-        <button type="button" class="logButton">Log Expense</button>
+          <p><select name="categoryType">
+          <option value="selectOne">- Select One -</option></select></p>
+        <p class="formText">Account from:</p>
+          <p><select name="accountType">
+          <option value="selectOne">- Select One -</option></select></p>
+        <p class="formText">Payee:</p>
+          <p><input name="payee" rows="1" columns="1"></input></p>
+        <p class="formText">Outflow:</p>
+          <p><input name="outflow" rows="1" columns="1"></input></p>
+        <p class="formText">Category:</p>
+          <p><input name="category" rows="1" columns="1"></input></p>
+        <p class="formText"><button type="button" id= "logbutton" class="allButton">Log Expense</button></p>
         </section>
+      </section>
     </div>
 
 </body>
