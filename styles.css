@@ -1,45 +1,11 @@
+
+/* **General Layout Styling** */
 * {
   color:  #363636;
   font-family: 'Biryani', sans-serif;
 }
 
-nav {
-  background-color: white;
-  width: 100px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  margin: 0px auto;
-}
-
-div.navicons {
-  padding-top: 100px;
-  float: left;
-}
-
-nav img {
-  width: 75%;
-  margin-left: -40px;
-  margin-top: 10px;
-}
-
-#dash {
-  border-left: solid 5px #1CA3BA;
-  padding-left:19px;
-}
-
-#wallet,
-#profile {
-  padding-left:23px;
-}
-
-ul {
-  list-style: none;
-  margin-top: 175px;
-}
-
-section.container {
+#container1 {
   width:100%;
   margin-left: 150px;
 
@@ -56,9 +22,28 @@ body{
   margin: 0px;
 }
 
-img.nav {
-  width: 100%;
-  padding-top: 20px;
+/* **Left column layout styling** */
+
+/* **Nav Bar Styling** */
+nav {
+  background-color: white;
+  width: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: 0px auto;
+}
+
+div.navicons {
+  padding-top: 100px;
+  float: left;
+}
+
+nav img {
+  width: 45px;
+  margin-left: -40px;
+  margin-top: 10px;
 }
 
 img.logo {
@@ -67,6 +52,24 @@ img.logo {
   margin-top: 10px;
 }
 
+.highlight {
+  border-left: solid 3px #1CA3BA;
+  padding-left:19px;
+}
+
+#wallet,
+#profile,
+#dash {
+  padding-left:23px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 175px;
+}
+
+
+/* **Welcome Banner** */
 div.welcome {
   border-radius: 5px;
   border-style: hidden;
@@ -92,6 +95,7 @@ img.close {
   margin-top: -5px;
 }
 
+/* **High Level Facts Layout** */
 section.facts {
   background-color: white;
   border-style: hidden;
@@ -115,11 +119,17 @@ section p {
   padding-top:3px;
 }
 
+/* **Accounts Layout** */
 h2.accounts,
 div.button1 {
   display: inline-block;
 }
+div.button1 {
+  margin-top: 20px;
+  margin-left: 285px;
+}
 
+/* **Accounts Styling** */
 button.button {
   background-color:#1CA3BA;
   border-style: hidden;
@@ -132,11 +142,6 @@ button.button {
   padding-top: 5px;
 }
 
-div.button1 {
-  /* float:right; */
-  margin-top: 20px;
-  margin-left: 285px;
-}
 
 button.button:hover {
   background-color:#1CA3BA;
@@ -154,7 +159,6 @@ div.southwest {
   background-color: white;
   margin-top: 20px;
   box-shadow:0px 2px 2px 0px rgba(0,0,0,0.05);
-
 }
 
 div.checking {
@@ -219,6 +223,7 @@ div.southwest {
   margin-bottom: 20px;
 }
 
+/* **Right Column Layout Styling** */
 table.transactions {
   box-shadow; 0px 2px 2px 0px rgba(0,0,0,0.05);
   border-collapse: collapse;
@@ -231,6 +236,8 @@ div.button2 {
   display: inline-block;
 }
 
+/* **Right Column Layout/Styling** */
+
 h2.recenttrans {
   margin-left: 20px;
   margin-bottom: 15px;
@@ -242,12 +249,18 @@ div.button2 {
   margin-left: 50px;
 }
 
-
 div.transtable {
   background-color:white;
   width:540px;
   height:430px;
   margin-top: 80px;
+}
+
+tr.trans {
+  border-bottom-style: solid;
+  border-bottom-color: #CCCCCC;
+  border-bottom-width: 1px;
+  border-collapse: collapse;
 }
 
 #date {
@@ -266,10 +279,61 @@ div.transtable {
 #outflow {
   width: 120px;
 }
-
-tr.trans {
-  border-bottom-style: solid;
-  border-bottom-color: #CCCCCC;
-  border-bottom-width: 1px;
-  border-collapse: collapse;
+/* Wallet Page Layout Styling */
+/* button.allButton {
+  background-color: #1CA3BA;
+  border-radius: 10px;
+  border: solid 1px #1CA3BA;
 }
+button.inflow,
+button.outflow {
+  background-color: white;
+  border-radius: 10px;
+  border: solid 1px #1CA3BA;
+}
+.allButton,
+.inflow {
+    margin-left: 3px;
+}
+#transactionButtons {
+  margin-left: 285px;
+}
+div.transtable2 {
+  width:600px;
+  height:1000px;
+  background-color: white;
+}
+
+.column2 {
+  float: right;
+  width: 40%;
+  margin-top: -700px;
+  margin-right: 50px;
+}
+section.newtransform {
+  background-color:white;
+  width:540px;
+  height:430px;
+  margin-top: 80px;
+}
+#newTransHeader {
+  text-align: center;
+}
+.logButton {
+  width:75px;
+  height:30px;
+  background-color: #1CA3BA
+}
+.inflow:hover,
+.outflow:hover,
+.allButton:hover,
+.logButton:hover {
+  font-weight: bold;
+  border-color: white;
+}
+.container2{
+  margin-left:130px;
+}
+h1.transactions {
+  margin-top: 50px;
+} */
