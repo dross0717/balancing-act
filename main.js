@@ -42,12 +42,3 @@ function changeContentToWallet() {
   wallet.style.display = "block";
   //change container 2 display to block
 }
-// function changeContentWallet() {
-//   console.log("change content 2");
-//     console.log(document.getElementById("container1").innerHTML);
-//   document.getElementById("container1").innerHTML = document.getElementById("container2");
-// }
-// document.getElementById("wallet").addEventListener("click", changeContentDash())
-
-// document.getElementById("dash").addEventListener("click", changeContentWallet())
-// document.getElementById("dash").addEventListener("click", highlightDash())

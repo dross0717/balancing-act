@@ -5,15 +5,16 @@
   font-family: 'Biryani', sans-serif;
 }
 
+
 #container1 {
   width:100%;
   margin-left: 150px;
   display: block;
-
 }
 
 #container2 {
   width:100%;
+  height: 700px;
   margin-left: 150px;
   display: none;
 }
@@ -23,6 +24,7 @@
   margin-top:-700px;
   margin-right: 50px;
 }
+
 
 body{
   background-color: #f5f5f5;
@@ -235,7 +237,7 @@ table.transactions {
   box-shadow; 0px 2px 2px 0px rgba(0,0,0,0.05);
   border-collapse: collapse;
   margin-left: 20px;
-  margin-right: 20px
+  margin-right: 20px;
 }
 
 h2.recenttrans,
@@ -259,7 +261,7 @@ div.button2 {
 div.transtable {
   background-color:white;
   width:540px;
-  height:430px;
+  height:500px;
   margin-top: 80px;
 }
 
@@ -268,15 +270,22 @@ tr.trans {
   border-bottom-color: #CCCCCC;
   border-bottom-width: 1px;
   border-collapse: collapse;
+
 }
 
 #date {
-  width:125px;
+  width:135px;
   padding-left: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
+#account {
+  width:160px;
+}
 #payee {
   width:160px;
+
 }
 
 #inflow {
@@ -286,61 +295,65 @@ tr.trans {
 #outflow {
   width: 120px;
 }
-/* Wallet Page Layout Styling
-button.allButton {
-  background-color: #1CA3BA;
-  border-radius: 10px;
-  border: solid 1px #1CA3BA;
+
+
+h1.transactions {
+  margin-top: 20px;
+  position: relative;
 }
-button.inflow,
-button.outflow {
-  background-color: white;
-  border-radius: 10px;
-  border: solid 1px #1CA3BA;
-}
-.allButton,
-.inflow {
-    margin-left: 3px;
-}
+h1.transactions,
 #transactionButtons {
-  margin-left: 285px;
-}
-div.transtable2 {
-  width:600px;
-  height:1000px;
-  background-color: white;
+  display: inline-block;
+
 }
 
-.column2 {
-  float: right;
-  width: 40%;
-  margin-top: -700px;
-  margin-right: 50px;
+#transactionButtons {
+  margin-left: 80px;
+  position: absolute;
+  margin-top: 30px;
+
 }
-section.newtransform {
-  background-color:white;
-  width:540px;
-  height:430px;
-  margin-top: 80px;
-}
-#newTransHeader {
+
+button.allButton {
+  background-color:#1CA3BA;
+  color: white;
+  width: 100px;
+  height: 25px;
   text-align: center;
+  border-color: #1CA3BA;
+  font-size: 9pt;
+  border-radius: 15px;
 }
-.logButton {
-  width:75px;
-  height:30px;
-  background-color: #1CA3BA
+
+button.inflow,
+button.outflow {
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    border-color: #1CA3BA;
+    font-size: 10pt;
+    border-radius: 15px;
+    color:#1CA3BA
 }
-.inflow:hover,
-.outflow:hover,
-.allButton:hover,
-.logButton:hover {
+
+div.transtable2 {
+  background-color: white;
+  width: 600px;
+  box-shadow; 0px 2px 2px 0px rgba(0,0,0,0.05);
+  border-collapse: collapse;
+  padding: 20px 20px 20px 20px;
+}
+
+table.transactions {
+  font-size: 11pt;
+}
+#date1,
+#account1,
+#payee1,
+#inflow1,
+#outflow1 {
   font-weight: bold;
-  border-color: white;
 }
-.container2{
-  margin-left:130px;
+#date1 {
+  padding-left: 15px;
 }
-h1.transactions {
-  margin-top: 50px;
-} */
