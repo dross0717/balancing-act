@@ -8,7 +8,14 @@
 #container1 {
   width:100%;
   margin-left: 150px;
+  display: block;
 
+}
+
+#container2 {
+  width:100%;
+  margin-left: 150px;
+  display: none;
 }
 .column2of2 {
   float: right;
@@ -279,8 +286,8 @@ tr.trans {
 #outflow {
   width: 120px;
 }
-/* Wallet Page Layout Styling */
-/* button.allButton {
+/* Wallet Page Layout Styling
+button.allButton {
   background-color: #1CA3BA;
   border-radius: 10px;
   border: solid 1px #1CA3BA;

@@ -27,23 +27,20 @@ function highlightWallet() {
 
 function changeContentToDash() {
   console.log("change content");
-  var dash = document.getElementById("container2");
-  if (dash.style.display === "none") {
-    dash.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+  var dashboard = document.getElementById("container1");
+  var wallet = document.getElementById("container2");
+  dashboard.style.display = "block";
+  wallet.style.display = "none";}
+
 
 function changeContentToWallet() {
   console.log("change content2");
-  var wallet = document.getElementById("container1");
-  console.log(wallet);
-  if (wallet.style.display == "none"){
-    wallet.style.display = "block";
-  } else {
-    wallet.style.display = "none";
-  }
+  //change container 1 display to none
+  var dashboard = document.getElementById("container1");
+  var wallet = document.getElementById("container2");
+  dashboard.style.display = "none";
+  wallet.style.display = "block";
+  //change container 2 display to block
 }
 // function changeContentWallet() {
 //   console.log("change content 2");
